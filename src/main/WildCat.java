@@ -1,6 +1,6 @@
 package main;
 
-public class Wild extends Base{
+public class WildCat extends Cat{
 
     @Override
     public String getBreed() {
@@ -12,9 +12,8 @@ public class Wild extends Base{
         return "Mitya";
     }
 
-    @Override
-    public String getAboutCat(){
-        return super.getAboutCat() +  " is a wild cat.";
+    public void getAboutWildCat(){
+        System.out.println(getName() + " " + getBreed() + " is a wild cat.");
     }
 
     public void hatePeople(){

@@ -1,6 +1,7 @@
 package main;
 
-public class Home extends Base{
+public class HomeCat extends Cat{
+
     @Override
     public String getBreed() {
         return "Vinegar";
@@ -12,9 +13,8 @@ public class Home extends Base{
     }
 
 
-    @Override
-    public String getAboutCat(){
-        return super.getAboutCat() +  " is a home cat and he likes to spoil shoes.";
+    public void getAboutHomeCat(){
+        System.out.println(getName() + " " + getBreed() + " is a home cat and he likes to spoil shoes.");
     }
 
     public void layOnSofa(){
@@ -23,10 +23,6 @@ public class Home extends Base{
 
     public void spoilShoes(){
         System.out.println(getName() + " " + getBreed() + " spoil shoes.");
-        System.out.println("Oh no!\nCurrent money of Master: " + Base.moneyAfterCat() + " $\n");
-    }
-
-    public void checkCurrentMoneyOfMaster(){
-        System.out.println("Current money of Master: " + Base.getMoney() + " $\n");
+        System.out.println("Oh no!\nCurrent money of Master: " + Master.moneyAfterCat() + " $\n");
     }
 }
