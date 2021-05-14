@@ -4,14 +4,21 @@ public class HomeCat extends Cat{
 
     @Override
     public String getBreed() {
-        return "Vinegar";
+        return this.breed;
     }
 
     @Override
     public String getName() {
-        return "Misha";
+        return this.name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setBreed(String breed) {
+        this.breed = breed;
+    }
 
     public void getAboutHomeCat(){
         System.out.println(getName() + " " + getBreed() + " is a home cat and he likes to spoil shoes.");

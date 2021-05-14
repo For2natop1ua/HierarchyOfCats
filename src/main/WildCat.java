@@ -4,12 +4,20 @@ public class WildCat extends Cat{
 
     @Override
     public String getBreed() {
-        return "Northern";
+        return this.breed;
     }
 
     @Override
     public String getName() {
-        return "Mitya";
+        return this.name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setBreed(String breed) {
+        this.breed = breed;
     }
 
     public void getAboutWildCat(){
